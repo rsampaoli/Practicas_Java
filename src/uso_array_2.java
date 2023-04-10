@@ -10,9 +10,15 @@ public class uso_array_2 {
         paises[5] = "Ecu";
         paises[6] = "EEUU";
         // recorrido con bucle normal
+        /*
+         * for (int i = 0; i < paises.length; i++) {
+         * System.out.println(paises[i]);
+         * }
+         */
+        // bucle for nuevo, for each, sabe hasta donde llegar en el array
 
-        for (int i = 0; i < paises.length; i++) {
-            System.out.println(paises[i]);
+        for (String elemento : paises) {
+            System.out.println(elemento);
         }
     }
 }
