@@ -39,7 +39,7 @@ public class Coche {
     }
 
     public void configura_asientos(String asientos_cuero) { // METODO SETTER
-        if (asientos_cuero == "si") {
+        if (asientos_cuero.equalsIgnoreCase("si")) {
             this.asientos_cuero = true;
         } else {
             this.asientos_cuero = false;
@@ -55,7 +55,7 @@ public class Coche {
     };
 
     public void configura_climatizador(String climatizador) { // SETTER
-        if (climatizador == "si") {
+        if (climatizador.equalsIgnoreCase("si")) {
             this.climatizador = true;
         } else {
             this.climatizador = false;
@@ -63,7 +63,7 @@ public class Coche {
     };
 
     public String dime_climatizador() { // GETTER
-        if (climatizador = true) {
+        if (climatizador == true) {
             return "El coche tiene climatizador";
         } else {
             return "El coche no tiene climatizador";
